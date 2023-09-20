@@ -1,0 +1,16 @@
+<table class="ui table">
+    <thead>
+        <tr>
+            <th *ngFor="let refer of references">
+                {{refer.head}}
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let detail of details">
+            <td *ngFor="let refer of references">
+                {{detail[refer.ref]}}
+            </td>
+        </tr>
+    </tbody>
+</table>
